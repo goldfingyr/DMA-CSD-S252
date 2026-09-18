@@ -16,7 +16,7 @@ namespace ACID
         private byte[] sqlRowVersion;
         private UInt64 sqlRowVersion64;
 #endif
-        string connectionString = "Data Source=127.0.0.1;Initial Catalog=xxx;Persist Security Info=True;User ID=sa;Password=@12tf56so;TrustServerCertificate=True";
+        string connectionString = "Data Source=127.0.0.1;Initial Catalog=xxx;Persist Security Info=True;User ID=sa;Password=!Password;TrustServerCertificate=True";
 
         /// <summary>
         /// Wrapper for BeginTransaction wo arguments
