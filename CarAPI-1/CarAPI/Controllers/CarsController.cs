@@ -51,6 +51,7 @@ namespace CarAPI.Controllers
                 try
                 {
                     // Return a List<Car>
+                    return Ok(connection.Query<Car>("SELECT * FROM dbo.Cars").ToList());
                 }
                 catch
                 {
@@ -72,6 +73,8 @@ namespace CarAPI.Controllers
                     });
                 }
                 // Return a two item List
+                List<Car> cars = connection.Query<Car>("SELECT * FROM dbo.Cars").ToList();
+                return Ok(connection.Query<Car>("SELECT * FROM dbo.Cars").ToList());
             }
         }
 
