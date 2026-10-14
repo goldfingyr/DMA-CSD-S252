@@ -1,0 +1,6 @@
+@DMI2Grafana_HostAddress = http://localhost:5129
+
+GET {{DMI2Grafana_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
